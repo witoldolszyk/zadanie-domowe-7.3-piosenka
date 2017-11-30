@@ -5,16 +5,19 @@ body {
     padding: 0;
     margin: 0;
     font-family: 'Open Sans', sans-serif;
-    background-color: black;
-    
+    background-color: green;
+}
+h1, h2 {
+	margin: 10px 0;
+	font-family: 'Lora', serif;
 }
 
 
 .hero {
 
 
-	background: green; 
-	
+	background: green;
+
 	text-transform: uppercase;
 }
 .hero-content {
@@ -44,4 +47,3 @@ body {
 	color: white
 	text-overflow: ellipsis;
 }
-
