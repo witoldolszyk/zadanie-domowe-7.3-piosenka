@@ -1,0 +1,3 @@
+node_modules/.bin/autoprefixer-cli  start  "style.css" --output  "style.prefixed.css "
+node_modules/.bin/autoprefixer-cli -o main.prefixed.css main.css
+node_modules/.bin/nu-html-checke-cli <index.html>
