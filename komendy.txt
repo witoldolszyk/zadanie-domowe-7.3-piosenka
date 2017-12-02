@@ -1,3 +1,7 @@
-node_modules/.bin/autoprefixer-cli  start  "style.css" --output  "style.prefixed.css "
-node_modules/.bin/autoprefixer-cli -o main.prefixed.css main.css
-node_modules/.bin/nu-html-checke-cli <index.html>
+"scripts": {
+    "test": "npm run test:html",
+    "test:html": "glob-run nu-html-checker *.html",
+
+    "build": "npm run build:sass && npm run build:autoprefixer && npm run test",
+    "build:sass": "sass --sourcemap=none --update sass:css",
+    "build:autoprefixer": "autoprefixer-cli css/style.css"
