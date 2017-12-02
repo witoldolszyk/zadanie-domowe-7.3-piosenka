@@ -9,13 +9,14 @@
 
     "build": "npm run build:sass && npm run build:autoprefixer && npm run test",
     "build:sass": "sass --sourcemap=none --update sass:css",
-	  "build:autoprefixer": "autoprefixer-cli css/style.css"
+    "build:autoprefixer": "autoprefixer-cli css/style.css"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "browser-sync": "^2.18.13",
-    "jshint": "^2.9.5"
+    "jshint": "^2.9.5",
+    "onchange": "^3.2.1"
   }
 }
